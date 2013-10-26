@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+  <persistence-unit name="MySQLDemoServicePU" transaction-type="JTA">
+    <jta-data-source>jdbc/mysql_sakila</jta-data-source>
+    <class>com.mysql.entities.Actor</class>
+    <class>com.mysql.entities.ActorInfo</class>
+    <class>com.mysql.entities.Film</class>
+    <class>com.mysql.entities.FilmActor</class>
+    <class>com.mysql.entities.Language</class>
+    <exclude-unlisted-classes>true</exclude-unlisted-classes>
+    <properties/>
+  </persistence-unit>
+</persistence>
