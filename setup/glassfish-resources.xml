@@ -10,6 +10,5 @@
         <property name="URL" value="jdbc:mysql://localhost:3306/sakila?zeroDateTimeBehavior=convertToNull"/>
         <property name="driverClass" value="com.mysql.jdbc.Driver"/>
     </jdbc-connection-pool>
-    <jdbc-resource enabled="true" jndi-name="mysql.sakila" object-type="user" pool-name="mysql_sakila_rootPool"/>
     <jdbc-resource enabled="true" jndi-name="jdbc/mysql_sakila" object-type="user" pool-name="mysql_sakila_rootPool"/>
 </resources>
